@@ -40,7 +40,7 @@ On a test machine:
 |=======
 | Method | time | factor
 | C gets | 0.590s | 1x
-| C++ iostreams | 8.938s | 15x
+| C++ iostreams | 0.295s | 0.51x
 | FLEX scanner | 0.782s | 1.33x
 | C GNU readline | 0.474s | 0.80x
 | Python | 1.985s | 3.3x
