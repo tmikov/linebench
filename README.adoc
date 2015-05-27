@@ -41,7 +41,7 @@ On a test machine:
 | Method | time | factor
 | C gets | 0.590s | 1x
 | C++ iostreams | 8.938s | 15x
-| FLEX scanner | 0.279s | 0.47x
+| FLEX scanner | 0.613s | 1.04x
 | C GNU readline | 0.474s | 0.80x
 | Python | 1.985s | 3.3x
 |======
