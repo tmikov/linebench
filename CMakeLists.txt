@@ -8,3 +8,11 @@ add_executable( bench bench.c )
 add_executable( pbench pbench.cxx )
 add_executable( count ${FLEX_count_OUTPUTS} )
 add_executable( gbench gbench.c )
+
+
+add_custom_command(OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/sample-input.txt
+                   COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/gendata.py > ${CMAKE_CURRENT_BINARY_DIR}/sample-input.txt
+                   MAIN_DEPENDENCY ${CMAKE_CURRENT_SOURCE_DIR}/gendata.py
+                   )
+
+add_custom_target(sample-input ALL DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/sample-input.txt)
