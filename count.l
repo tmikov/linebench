@@ -15,6 +15,7 @@ int main()
     char *line;
     while(yylex(&line) == 1) {
         fwrite( line, linelen, 1, stdout );
+        putchar( '\n' );
     }
     printf( "# of lines = %d, # of chars = %d\n",
             num_lines, num_chars );
