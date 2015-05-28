@@ -44,4 +44,5 @@ On a test machine:
 | FLEX scanner | 0.782s | 1.33x
 | C GNU readline | 0.474s | 0.80x
 | Python | 1.985s | 3.3x
+| NodeJS | 1.089s | 1.86x
 |======
